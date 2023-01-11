@@ -1,5 +1,18 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
+
+const eqArrays = function(arr1, arr2) {
+
+  if (arr1.length !== arr2.length) {
+    return false
+  } 
+  for (let i = 0; i < arr1.length; i++) {
+    if(arr1[i] !== arr2[i]) {
+      return false;
+    }
+  }
+  return true
+}
+
+const assertArrayEqual = function(actual, expected) {
 
   if (actual === expected) {
     console.log(`✅✅✅✅Assertion Passed: ${actual} === ${expected}`);
@@ -8,6 +21,6 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+assertArrayEqual(eqArrays([1, 2, 3], [1, 2, 4]), false)
+
+
