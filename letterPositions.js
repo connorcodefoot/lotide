@@ -1,4 +1,4 @@
-const countLetters = function(str) {
+const letterPositions = function(str) {
 
   let letterIndexObj = {};
 
@@ -26,4 +26,6 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-console.log(countLetters('this friggen string'));
+console.log(letterPositions('Hello'));
+
+assertEqual(letterPositions('hello').e, [1]);
