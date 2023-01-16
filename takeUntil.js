@@ -7,10 +7,10 @@ const takeUntil = (arr, callback) => {
 
   let results = [];
   for(const index in arr) {
-    if(callback(arr[index])){
+    if(callback(index)){
       break
     }
-    results.push(arr[index])
+    results.push(index)
   }
   return results
 }

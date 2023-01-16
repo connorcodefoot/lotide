@@ -18,7 +18,7 @@ const assertArraysEqual = function(actual, expected) {
   } else {
     console.log(`🙅‍♂️🙅‍♂️🙅‍♂️🙅‍♂️Assertion Failed: ${actual} !== ${expected}`);
   }
-};
+};c
 
 const middle = function(arr) {
 

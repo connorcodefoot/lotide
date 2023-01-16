@@ -9,16 +9,17 @@ const countLetters = function(str) {
 
   for (let word of str) {
 
-    if (word !== ' ') {
-  
-      if (!(letterCountObj[word])) {
-        letterCountObj[word] = 0;
-      }
-
-      letterCountObj[word] += 1;
-
+    if (word === ' ') {
+      continue
     }
+  
+    if (!(letterCountObj[word])) {
+      letterCountObj[word] = 0;
+    }
+  
+  letterCountObj[word] ++
   }
+
   return letterCountObj;
 };
 
